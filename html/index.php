@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include('../db_connection/connect.php');?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -219,6 +219,8 @@
                 </ul>
             </div>
         </section>
+        <?php foreach($comments as $comment)
+        { ?>
         <div class="container d-flex justify-content-center align-items-center height-vh">
             <div class="row d-flex justify-content-center">
               <div class="col-md-8">
@@ -227,13 +229,12 @@
                     <div class="flex-row d-flex">
                       <!-- <img src="images/810x270_3.jpg" width="40" class="rounded-circle"> -->
                       <div class="d-flex flex-column justify-content-start ml-2">
-                        <span class="d-block font-weight-bold name">Wonder Woman</span>
+                        <span class="d-block font-weight-bold name"><?=$comment['name']?></span>
                         <span class="date text-black-50">Public - 09Jun, 2021</span>
                       </div>
                     </div>
                     <div class="mt-3">
-                      <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis velit lorem, et condimentum est tempus sed. Integer tristique malesuada diam at mollis. Quisque id finibus mauris. Donec turpis justo, euismod nec commodo quis, elementum nec risus. Praesent blandit in lacus sed pretium. Duis in velit augue. Integer velit urna, convallis eget fermentum sed, aliquet at quam.</p>
-                    </div>
+                      <p class="comment-text"><?=$comment['text']?></p> 
                   </div>
                   <div class="bg-white">
                     <div class="d-flex flex-row fs-14">
@@ -246,6 +247,7 @@
               </div>
             </div>
           </div>
+          <?php }?>
     </main>
 
     <footer>
