@@ -1,0 +1,694 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.city-card {
+    background: #fff;
+    box-shadow: 0 .2rem .4rem .2rem rgba(0, 0, 0, .1);
+    border-radius: .3rem;
+    margin: 0 0 2rem;
+    max-width: 100%;
+    width: 100%;
+    display: inline-block;
+    text-align: center
+}
+
+.city-card:hover {
+    box-shadow: 0 0 .6rem 0 rgba(0, 0, 0, .5);
+    background-color: #fff
+}
+
+
+.card-image {
+    width: 100%;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem
+}
+
+.card-wrapper {
+    display: table;
+    width: 100%
+}
+
+.city-card__details {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2rem
+}
+
+@media only screen and (min-width:769px) {
+    .city-card__details {
+        padding: .5rem
+    }
+}
+
+.city-card__country {
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 1rem;
+    line-height: 1.15rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    color: #666;
+    margin: 0;
+}
+
+.city-card__city {
+    font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #333;
+    margin-top: .5rem;
+    margin-bottom: 0
+}
+
+@media only screen and (min-width:769px) {
+    .city-card__city {
+        font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        font-weight: 700;
+        margin-top: .5rem;
+        margin-bottom: 0
+    }
+}
+
+.city-card__date {
+    font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.38rem;
+    font-weight: 200;
+    line-height: 1.6rem;
+    margin: 10px 0 0;
+    letter-spacing: 0;
+    color: #333
+}
+
+@media only screen and (max-width:769px) {
+    .city-card__date {
+        margin: 0;
+        font-weight: 400
+    }
+}
+
+.city-card__price {
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 1rem;
+    line-height: 1.61rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    margin: 5px 0 0;
+    letter-spacing: 0;
+    color: #333
+}
+
+.grid-item {
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.medium {
+    width: 30%;
+}
+
+.container {
+    text-align: center;
+    padding: 60px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: end;
+    align-content: center;
+    box-shadow: 1px 1px 20px #000;
+    margin-top: -10px;
+    right: 0;
+    position: fixed;
+    height: 50px;
+    z-index: 10;
+    background: #fff;
+    width: 100%;
+}
+
+nav ul li a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline;
+    margin-inline: 2rem;
+}
+
+.img div img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img div {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+header {
+    margin: 10px 80px;
+}
+
+.logo {
+    width: 90px;
+    margin-right: 45%;
+}
+
+.book {
+    height: 240px;
+    width: 60%;
+    background: #fff;
+    position: absolute;
+    margin: -10% 20% 0 20%;
+    box-shadow: 1px 1px 20px #666;
+    border-radius: 10px;
+}
+
+.book-wrapper {
+    padding: 10px;
+}
+
+.free-space {
+    display: none;
+}
+
+.btn-wrapper {
+    padding-inline: 50px;
+}
+
+.btn-book,
+.a-space {
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.btn-book:hover,
+.a-space:hover {
+    border: 1px solid #a33434;
+}
+
+.active {
+    border: 1px solid darkred !important;
+}
+
+.btn-book {
+    margin-right: -4px;
+}
+
+.footer-wrapper {
+    height: 350px;
+    background: #E5E3E4;
+    padding: 15px;
+    font-family: sans-serif;
+    display: flex;
+}
+
+.contact {
+    display: inline-block;
+    width: 33%;
+}
+
+.contact h4 {
+    color: darkred;
+}
+
+.contact div {
+    margin-bottom: 35px;
+}
+
+.location {
+    display: inline-block;
+    width: 33%;
+    position: relative;
+}
+
+.location h4 {
+    color: darkred;
+}
+
+.email {
+    display: inline-block;
+    width: 33%;
+}
+
+.email h4 {
+    color: darkred;
+}
+
+.email input[type="email"] {
+    padding: 8px 20px 8px 20px;
+    outline: none;
+    border: 1px solid darkred;
+}
+
+.email input[type="button"] {
+    margin-left: -5px;
+    padding: 8px 20px 8px 20px;
+    outline: none;
+    border: 1px solid darkred;
+    color: #858f9c;
+    cursor: pointer;
+}
+
+.email input[type="button"]:active {
+    background: #e5e3e4;
+}
+
+.email i {
+    padding: 8px 8px 8px 0;
+    font-size: 30px;
+    color: #858f9c;
+    cursor: pointer;
+}
+
+.email i:hover {
+    color: darkred;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 58px 50px 10px 50px;
+    margin: auto;
+    position: relative;
+}
+
+.heading {
+    font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 30px;
+    padding-top: 47px;
+    margin: 0;
+    display: block;
+    text-align: center;
+    line-height: normal
+}
+
+.description {
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: normal;
+    color: #333;
+    font-weight: 300
+}
+
+.links__list {
+    width: 100%;
+    text-align: center;
+    max-width: none;
+    padding: 0;
+    margin: 0
+}
+
+.list-item {
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    width: 220px;
+    min-width: 200px;
+    padding-bottom: 10px;
+    vertical-align: text-top;
+    position: relative
+}
+
+.link {
+    text-decoration: underline;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.61rem;
+    font-weight: 700
+}
+
+.rounded-image {
+    width: 165px;
+    height: 165px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    box-shadow: 5px 3px 3px 0 rgba(0, 0, 0, .04);
+    margin: 15px auto 0;
+    transition: transform .2s linear
+}
+
+.link:hover .rounded-image {
+    transform: scale(1.1);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.deffer-image {
+    width: 100%;
+    height: 100%
+}
+
+.link-text {
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+
+/* main section */
+
+.title {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center
+}
+
+.block__title,
+.block__description {
+    display: block;
+    text-align: center
+}
+
+.title {
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #666
+}
+
+.block__title {
+    font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    color: #333;
+    margin: 15px 0
+}
+
+.block__description p {
+    font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #666
+}
+
+.experience-block__grid {
+    margin: 0 auto;
+    max-width: 1135px
+}
+
+.card:hover {
+    box-shadow: 0 0 .6rem 0 rgba(0, 0, 0, .5)
+}
+
+.card-item {
+    position: relative;
+    min-width: 262px;
+    min-height: 262px;
+    width: 262px;
+    height: 262px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card:first-of-type .card-item {
+    width: 534px;
+    height: 534px
+}
+
+.card:first-of-type:nth-last-of-type(4) .card-item,
+.card:first-of-type:nth-last-of-type(4)~.card .card-item {
+    width: calc(25vw - 3rem);
+    height: calc(25vw - 3rem);
+    max-width: 262px;
+    max-height: 262px
+}
+
+.item-container {
+    position: relative;
+    padding: 20px 20px 0;
+    z-index: 1
+}
+
+.section-title {
+    display: block;
+    text-align: center;
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.item-title {
+    font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    font-style: normal;
+    position: relative;
+    margin-bottom: 0;
+    color: #333
+}
+
+.card:first-of-type .item-title {
+    font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 50px;
+    line-height: 55px;
+    margin-top: 30px;
+    text-align: left
+}
+
+.learn-more {
+    font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 200;
+    display: block;
+    padding: 10px 0 0;
+    text-align: center;
+    line-height: 1px;
+}
+
+.card:first-of-type .learn-more {
+    text-align: left
+}
+
+.item-image {
+    position: absolute;
+    bottom: 0;
+    margin-top: -.5rem;
+    width: 100%
+}
+
+.card:first-of-type .item-title:focus {
+    text-decoration: underline
+}
+
+.card:first-of-type .item-title:after {
+    margin: 0
+}
+
+.card {
+    display: block;
+    float: left;
+    margin: 0 0 8px 13px
+}
+
+.item-title:after {
+    content: "";
+    position: relative;
+    display: block;
+    background-color: #d71921;
+    width: 60px;
+    height: 2px;
+    margin-top: 5px !important
+}
+
+.item-title {
+    text-align: center
+}
+
+.item-title:after {
+    margin: 5px auto
+}
+
+.booking {
+    text-align: center;
+    align-content: center;
+}
+
+.booking form {
+    vertical-align: top;
+}
+
+.booking .from,
+.to,
+.free-space {
+    border: 1px solid darkred;
+    padding: 10px;
+    outline: 0;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.free-space {
+    margin-top: 9px;
+    border-radius: 6px;
+    margin-inline: 50px;
+    height: 152px;
+    justify-content: space-between;
+    padding-inline: 55px;
+}
+
+.free-space .f-class div {
+    box-shadow: 1px 1px 5px 1px lightgrey;
+    border-radius: 4px;
+    padding: 10px 20px 10px 0;
+}
+
+.free-space .f-class div span {
+    display: block;
+    border: 1px solid darkred;
+    padding: 3px;
+    color: #666;
+    width: 130px;
+}
+
+.free-space .b-class div {
+    box-shadow: 1px 1px 5px 1px lightgrey;
+    border-radius: 4px;
+    padding: 10px 20px 10px 0;
+}
+
+.free-space .b-class div span {
+    display: block;
+    border: 1px solid darkred;
+    padding: 3px;
+    color: #666;
+    width: 130px;
+}
+
+.free-space .e-class div {
+    box-shadow: 1px 1px 5px 1px lightgrey;
+    border-radius: 4px;
+    padding: 10px 20px 10px 0;
+}
+
+.free-space .e-class div span {
+    display: block;
+    border: 1px solid darkred;
+    padding: 3px;
+    color: #666;
+    width: 130px;
+}
+
+.f-class .class,
+.e-class .class,
+.b-class .class {
+    background: darkred;
+    color: #fff;
+    padding: 5px;
+    position: relative;
+    top: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.from {
+    margin-right: -5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.booking input[type="time"] {
+    border: 1px solid darkred;
+    outline: none;
+    padding: 9px 9px 10px 9px;
+    padding-bottom: 7.5px;
+    margin-left: -5px;
+}
+
+.booking input[type="submit"] {
+    height: 45px;
+    margin-left: -5px;
+    background: #3196da;
+    border: 1px solid darkred;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700');
+ *{
+   border-radius: 0px !important;
+   border: 0px !important;
+ }
+
+ body{
+   margin: 0px;
+   font-family: "Poppins", sans-serif !important;
+   background: #FED18C !important;
+ }
+
+ .height-vh{
+   height: 100vh;
+ }
+
+#comment-container{
+  padding: 40px !important;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.date{
+  font-size: 12px;
+}
+
+.comment-text{
+  font-size: 14px;
+  line-height: 1.2rem;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+
+.name{
+  color: #FE654F;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.cursor:hover{
+  color: blue;
+}
